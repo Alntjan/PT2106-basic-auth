@@ -1,0 +1,25 @@
+<div>
+
+  <h2>Login Page</h2>
+
+  <form action="/auth/login" method="POST">
+
+    <label for="email">Email:</label>
+    {{!-- Frontend validators example below, using simple text instead for teaching purposes --}}
+    {{!-- <input type="email" name="email" required> --}}
+    <input type="text" name="email" autocomplete="off">
+    <br>
+
+    <label for="password">Password:</label>
+    {{!-- Frontend validators example below, using simple text instead for teaching purposes --}}
+    {{!-- <input type="password" name="password" required> --}}
+    <input type="text" name="password" autocomplete="off">
+    <br>
+
+    <button type="submit">Submit</button>
+  
+  </form>
+
+  <p style="color: red">{{errorMessage}}</p>
+
+</div>
