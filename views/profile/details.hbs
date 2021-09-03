@@ -1,8 +1,9 @@
 <div>
+  {{#with user}}
+    <h2>Welcome lord {{username}}!</h2>
 
-  <h2>Welcome to your private page!</h2>
-
-  <p>Your bank number is: 1112223</p>
-  <p>you have 10$</p>
-
+    <p>This is your email: {{email}}</p>
+    <p>This is your ugly potato head:</p>
+    <img src='{{profilePicture}}' alt='' />
+  {{/with}}
 </div>

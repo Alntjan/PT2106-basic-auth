@@ -2,30 +2,33 @@
 
   <h2>Signup Page</h2>
 
-  <form action="/auth/signup" method="POST">
-  
-    <label for="username">Username:</label>
-    {{!-- Frontend validators example below, using simple text instead for teaching purposes --}}
-    {{!-- <input type="text" name="username" required> --}}
-    <input type="text" name="username" autocomplete="off">
-    <br>
+  <form action='/auth/signup' method='POST' enctype='multipart/form-data'>
 
-    <label for="email">Email:</label>
-    {{!-- Frontend validators example below, using simple text instead for teaching purposes --}}
-    {{!-- <input type="email" name="email" required> --}}
-    <input type="text" name="email" autocomplete="off">
-    <br>
+    <label for='username'>Username:</label>
+    {{! Frontend validators example below, using simple text instead for teaching purposes }}
+    {{! <input type="text" name="username" required> }}
+    <input type='text' name='username' autocomplete='off' />
+    <br />
 
-    <label for="password">Password:</label>
-    {{!-- Frontend validators example below, using simple text instead for teaching purposes --}}
-    {{!-- <input type="password" name="password" required> --}}
-    <input type="text" name="password" autocomplete="off">
-    <br>
+    <label for='email'>Email:</label>
+    {{! Frontend validators example below, using simple text instead for teaching purposes }}
+    {{! <input type="email" name="email" required> }}
+    <input type='text' name='email' autocomplete='off' />
+    <br />
 
-    <button type="submit">Submit</button>
-  
+    <label for='password'>Password:</label>
+    {{! Frontend validators example below, using simple text instead for teaching purposes }}
+    {{! <input type="password" name="password" required> }}
+    <input type='text' name='password' autocomplete='off' />
+    <br />
+
+    <label for='imageUrl'>Profile Picture:</label>
+    <input type='file' name='imageUrl' />
+
+    <button type='submit'>Submit</button>
+
   </form>
 
-  <p style="color: red">{{errorMessage}}</p>
+  <p style='color: red'>{{errorMessage}}</p>
 
 </div>
