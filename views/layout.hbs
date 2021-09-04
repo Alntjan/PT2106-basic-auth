@@ -1,32 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>{{title}}</title>
-      <link rel="stylesheet" href="/stylesheets/style.css" />
-   </head>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+    <title>{{title}}</title>
 
-   <body>
+    <link
+      rel='stylesheet'
+      href='https://unpkg.com/leaflet@1.7.1/dist/leaflet.css'
+      integrity='sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=='
+      crossorigin=''
+    />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
 
-      <nav>
+    <script
+      src='https://unpkg.com/leaflet@1.7.1/dist/leaflet.js'
+      integrity='sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=='
+      crossorigin=''
+    ></script>
+  </head>
 
-         <a href="/auth/signup">Signup</a>
-         <br>
-         <a href="/auth/login">Login</a>
-         <br>
-         <a href="/profile">See your private profile</a>
-         <br>
-         <a href="/auth/logout">Logout</a>
-      </nav>
+  <body>
 
-      <hr>
+    <nav>
 
-      {{{body}}}
+      <a href='/auth/signup'>Signup</a>
+      <br />
+      <a href='/auth/login'>Login</a>
+      <br />
+      <a href='/profile'>See your private profile</a>
+      <br />
+      <a href='/auth/logout'>Logout</a>
+    </nav>
 
-      <script src="/js/script.js"></script>
-   </body>
+    <hr />
+    <div id='mapid'></div>
+
+    {{{body}}}
+
+    <script src='/js/script.js'></script>
+    <script src='/js/map.js'></script>
+  </body>
 
 </html>
